@@ -1,0 +1,46 @@
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Form styling */
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.2);
+    border-color: #1a56db;
+}
+
+/* Button hover effects */
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(26, 86, 219, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+    .hero-image {
+        height: 300px;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a56db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1c64f2;
+}
